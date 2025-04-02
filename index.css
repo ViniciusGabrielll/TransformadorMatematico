@@ -1,0 +1,51 @@
+body{
+    background-color: #e9f2f9;
+    overflow-x: hidden;
+    font-family: "Roboto", sans-serif;
+    color: #1b325f;
+}
+
+header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2vw;
+}
+
+.adsonContainer {
+    width: 80vh;
+    height: 80vh;
+    background-color: #eff6fb;
+    border-radius: 50%;
+    left: 150vh;
+    position: absolute;
+    rotate: -15deg;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.adsonContainer2 {
+    width: 70vh;
+    height: 70vh;
+    background-color: #f7fbff;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.adsonContainer3 {
+    width: 60vh;
+    height: 60vh;
+    background-color: #ffffff;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.Adson {
+    width: 50vh;
+    border-radius: 50%;
+}
