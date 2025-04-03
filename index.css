@@ -12,6 +12,20 @@ header {
     font-size: 2vw;
 }
 
+select{
+    width: 30vw;
+    height: 5vw;
+    align-items: center;
+    border: none;
+    background-color: #ffffff;
+    border-radius: 10vw;
+    font-size: 1.3vw;
+    font-family: "Roboto", sans-serif;
+    text-align: center;
+    margin-right: 2vw;
+    margin-top: 2vw;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
 .distance{
     padding-left: 3vw;
     padding-right: 3vw;
@@ -82,6 +96,13 @@ header {
     border-radius: 50%;
 
     animation: Adson 10s linear infinite;
+}
+
+.line{
+    margin-top: 5vw;
+    width: 100%;
+    height: 10px;
+    background-color: #9cc4e4;
 }
 
 @keyframes Adson {

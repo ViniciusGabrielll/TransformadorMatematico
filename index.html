@@ -43,10 +43,55 @@
         </div>
 
         <div>
-            <h1 class="Title" style="margin-top: 10vw;">Origem dos Numeros Binário</h1>
+            <h1 class="Title" style="margin-top: 10vw;">Origem dos Numeros Binários</h1>
             <p class="texts">O sistema binário tem origem na antiguidade, sendo usado por várias culturas, como os chineses, os maias e os egípcios. O filósofo e matemático alemão Gottfried, ficou conhecidocomo o criador dos números binários, mas na realidade ele apenas formalizou o sistema no século XVII. Os nativos de Mangareva, uma oequena ilha na Polinésia, desenvolveram esse método para contar peixes, frutas, cocos, polvos e outros bens de diferente valor e hj o sistema é  utilizado em diversas áreas da atualidade, como na informática, na robótica entre outros</p>
         </div>
     </div>
+
+    <div class="line"></div>
+
+    <div class="distance">
+        <h1 class="Title">Transformador de Bytes</h1>
+
+        <div>
+            <select id="inputUnit" onchange="convert()">
+                <option value="b">Bits (b)</option>
+                <option value="B">Bytes (B)</option>
+                <option value="KB">Kilobytes (KB)</option>
+                <option value="MB">Megabytes (MB)</option>
+                <option value="GB">Gigabytes (GB)</option>
+                <option value="TB">Terabytes (TB)</option>
+            </select>
+           
+            <select id="outputUnit" onchange="convert()">
+                <option value="b">Bits (b)</option>
+                <option value="B">Bytes (B)</option>
+                <option value="KB">Kilobytes (KB)</option>
+                <option value="MB">Megabytes (MB)</option>
+                <option value="GB">Gigabytes (GB)</option>
+                <option value="TB">Terabytes (TB)</option>
+            </select>
+        </div>
+
+        <input class="Input" type="number" id="inputValue" placeholder="Valor" oninput="convert()">
+        <input class="Input" type="number" id="outputValue" placeholder="Valor" oninput="reverseConvert()">
+
+        <h1 style="margin-top: 10vw;" class="Title">O que são Bits e Bytes?</h1>
+        <p class="texts">Os bits e bytes são as unidades básicas de armazenamento e transmissão de dados nos computadores. Um bit (b) é a menor unidade de informação digital e pode ter apenas dois valores: 0 ou 1. Já um byte (B) é formado por 8 bits e é usado para representar caracteres, números e outros tipos de dados.
+
+            As medidas aumentam em múltiplos de 1000 ou 1024, dependendo do contexto:
+            
+            1 KB (Kilobyte) = 1.000 Bytes
+            
+            1 MB (Megabyte) = 1.000 KB
+            
+            1 GB (Gigabyte) = 1.000 MB
+            
+            1 TB (Terabyte) = 1.000 GB
+            
+            Os bytes são usados para medir o tamanho de arquivos, armazenamento de dispositivos e a velocidade de transferência de dados na internet.</p>
+    </div>
+
     <script src="index.js"></script>
 </body>
 </html>
