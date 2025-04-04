@@ -14,13 +14,7 @@
 </head>
 <body>
 
-    <div class="adsonContainer">
-        <div class="adsonContainer2">
-            <div class="adsonContainer3">
-                <img src="images/Adson.png" class="Adson">
-            </div>
-        </div>
-    </div>
+
 
 
     <header>
@@ -30,15 +24,25 @@
     <div class="distance"> 
         <h1 class="Title">Numero Binário</h1>
 
-        <div>
+        <div class="Inputs">
             <input class="Input" type="text" id="decimalInput" placeholder="Digite um número decimal">
+            <h2 class="Setas">⇅</h2>
             <input class="Input" type="text" id="binaryInput" placeholder="Digite um número binário">
+        </div>
+
+        <div class="adsonContainer">
+            <div class="adsonContainer2">
+                <div class="adsonContainer3">
+                    <img src="images/Adson.png" class="Adson">
+                </div>
+            </div>
         </div>
 
         <h1 style="margin-top: 7vw;" class="Title">Texto Binário</h1>
 
-        <div>
+        <div class="Inputs">
             <input class="Input" type="text" id="textInput" placeholder="Digite um texto">
+            <h2 class="Setas">⇅</h2>
             <input class="Input" type="text" id="binaryTextInput" placeholder="Binário correspondente">
         </div>
 
@@ -53,7 +57,7 @@
     <div class="distance">
         <h1 class="Title">Transformador de Bytes</h1>
 
-        <div>
+        <div class="Inputs">
             <select id="inputUnit" onchange="convert()">
                 <option value="b">Bits (b)</option>
                 <option value="B">Bytes (B)</option>
@@ -63,7 +67,7 @@
                 <option value="TB">Terabytes (TB)</option>
             </select>
            
-            <select id="outputUnit" onchange="convert()">
+            <select class="apear" id="outputUnit" onchange="convert()">
                 <option value="b">Bits (b)</option>
                 <option value="B">Bytes (B)</option>
                 <option value="KB">Kilobytes (KB)</option>
@@ -74,22 +78,37 @@
         </div>
 
         <input class="Input" type="number" id="inputValue" placeholder="Valor" oninput="convert()">
+        <h2 class="Setas">⇅</h2>
+       
+        <select class="disapear" id="outputUnit" onchange="convert()">
+            <option value="b">Bits (b)</option>
+            <option value="B">Bytes (B)</option>
+            <option value="KB">Kilobytes (KB)</option>
+            <option value="MB">Megabytes (MB)</option>
+            <option value="GB">Gigabytes (GB)</option>
+            <option value="TB">Terabytes (TB)</option>
+        </select>
         <input class="Input" type="number" id="outputValue" placeholder="Valor" oninput="reverseConvert()">
 
         <h1 style="margin-top: 10vw;" class="Title">O que são Bits e Bytes?</h1>
         <p class="texts">Os bits e bytes são as unidades básicas de armazenamento e transmissão de dados nos computadores. Um bit (b) é a menor unidade de informação digital e pode ter apenas dois valores: 0 ou 1. Já um byte (B) é formado por 8 bits e é usado para representar caracteres, números e outros tipos de dados.
 
             As medidas aumentam em múltiplos de 1000 ou 1024, dependendo do contexto:
-            
+            <br>
             1 KB (Kilobyte) = 1.000 Bytes
-            
+            <br>
             1 MB (Megabyte) = 1.000 KB
-            
+            <br>
             1 GB (Gigabyte) = 1.000 MB
-            
+            <br>
             1 TB (Terabyte) = 1.000 GB
-            
-            Os bytes são usados para medir o tamanho de arquivos, armazenamento de dispositivos e a velocidade de transferência de dados na internet.</p>
+            <br>
+            Os bytes são usados para medir o tamanho de arquivos, armazenamento de dispositivos e a velocidade de transferência de dados na internet.
+        </p>
+    </div>
+
+    <div class="distance">
+        <h3 style="font-size: 2vw;">Feito por: Vinicius Gabriel</h3>
     </div>
 
     <script src="index.js"></script>

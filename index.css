@@ -114,3 +114,147 @@ select{
     }
 }
 
+.Setas{
+    display: none;
+}
+
+.apear{
+    display: flexbox;
+}
+.disapear{
+    display: none;
+}
+@media screen and (max-width: 480px) {
+   .apear{
+    display: none;
+   } 
+   .disapear{
+    display: flex;
+   }
+    header{
+        font-size: 3.5vw;
+    }
+    select{
+        width: 80vw;
+        height: 7vw;
+        justify-content: center;
+        align-items: center;
+        border: none;
+        background-color: #ffffff;
+        border-radius: 10vw;
+        font-size: 3.5vw;
+        font-family: "Roboto", sans-serif;
+        text-align: center;
+        margin-right: 0vw;
+        margin-top: 0vw;
+        margin-bottom: 5vw;
+        box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    }
+    .distance{
+        padding-left: 3vw;
+        padding-right: 3vw;
+        padding-top: 5vw;
+        padding-bottom: 1vw;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+    
+    .Inputs{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        margin-bottom: 0vw;
+    }
+    .Input{
+        width: 80vw;
+        height: 15vw;
+        justify-content: center;
+        align-items: center;
+        border: none;
+        background-color: #ffffff;
+        border-radius: 10vw;
+        font-size: 3.5vw;
+        font-family: "Roboto", sans-serif;
+        text-align: center;
+        margin-right: 0vw;
+        margin-top: 0vw;
+        box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    }
+    .Setas{
+        display: flex;
+        margin-top: 5vw;
+        font-size: 5vw;
+    }
+    .Title{
+        font-size: 5vw;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .texts{
+        font-size: 4vw;
+        margin-right: 0vw;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+    .adsonContainer {
+        width: 50vw;
+        height: 50vw;
+        margin-top: 30vw;
+        margin-bottom: -25vw;
+        margin-left: 15%;
+        background-color: #eff6fb;
+        border-radius: 50%;
+        position: static;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    
+    .adsonContainer2 {
+        width: 45vw;
+        height: 45vw;
+        background-color: #f7fbff;
+        border-radius: 50%;
+    }
+    
+    .adsonContainer3 {
+        width: 40vw;
+        height: 40vw;
+        background-color: #ffffff;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .Adson {
+        width: 35vw;
+        max-width: 100%;
+        border-radius: 50%;
+    
+        animation: Adson 10s linear infinite;
+    }
+    
+    .line{
+        margin-top: 5vw;
+        width: 100%;
+        height: 10px;
+        background-color: #9cc4e4;
+    }
+    
+    @keyframes Adson {
+        0% {
+            rotate: 0deg;
+        }
+        100% {
+            rotate: 360deg;
+        }
+    }
+}
+
